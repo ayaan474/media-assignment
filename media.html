@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-color: aqua;
+        text-align: center;
+        height: 100vh;
+       }
+       h1{
+        font-size: 60px;
+       }
+       p{
+        font-size: 40px;
+       }
+       
+       @media(min-width:425px){
+        body{
+            background-color: rgb(231, 68, 68) ;
+        }
+        div::after{
+            content: "screen size 425px";
+        }
+       }
+
+       @media(min-width:768px){
+        body{
+            background-color: lightskyblue ;
+        }
+        div::after{
+            content: "screen size 768px";
+        }
+       }
+
+       @media(min-width:1024px){
+        body{
+            background-color: darkgoldenrod ;
+        }
+        div::after{
+            content: "screen size 1024px";
+        }
+       }
+
+       @media(min-width:1440px){
+        body{
+            background-color: green;
+        }
+        div::after{
+            content:"screen size 1440px";
+        }
+       }
+
+      
+    </style>
+</head>
+<body>
+    <div>
+    <h1>This is a media query demo page.</h1>
+    <p></p>
+</div>
+</body>
+</html>
